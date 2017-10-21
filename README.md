@@ -15,8 +15,18 @@ The goals / steps of this project are the following:
 [notcat]: ./output_images/processed_not_car.png
 [notcat_hog]: ./output_images/processed_not_car_hog.png
 [slide_multiple_windows]: ./output_images/processed_slide_multiple_windows.png
-[processed_result]: ./output_images/processed_test1.png
-[processed_result_heatmap]: ./output_imagesprocessed_test1_heatmap.png
+[processed_result1]: ./output_images/processed_test1.png
+[processed_result_heatmap1]: ./output_images/processed_test1_heatmap.png
+[processed_result2]: ./output_images/processed_test2.png
+[processed_result_heatmap2]: ./output_images/processed_test2_heatmap.png
+[processed_result3]: ./output_images/processed_test3.png
+[processed_result_heatmap3]: ./output_images/processed_test3_heatmap.png
+[processed_result4]: ./output_images/processed_test4.png
+[processed_result_heatmap4]: ./output_images/processed_test4_heatmap.png
+[processed_result5]: ./output_images/processed_test5.png
+[processed_result_heatmap5]: ./output_images/processed_test5_heatmap.png
+[processed_result6]: ./output_images/processed_test6.png
+[processed_result_heatma6p]: ./output_images/processed_test6_heatmap.png
 [video1]: ./project_video.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -70,9 +80,10 @@ I trained a linear SVM using in `Train model` section in Jupyter notebook
 
 ####1. Describe how (and identify where in your code) you implemented a sliding window search.  How did you decide what scales to search and how much to overlap windows?
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
-
-![slide_multiple_windows][slide_multiple_windows]
+I played with scales and ended up with this values
+* y_range = [400, 656]
+* xy_window = (96, 96)
+* overlap = 0.5
 
 ####2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
@@ -97,8 +108,18 @@ Also I found that boxes are jumping sometimes and sometimes dissapears for a sec
 
 ### Here are six frames and their corresponding heatmaps:
 
-![processed_result][processed_result]
-![processed_result_heatmap][processed_result_heatmap]
+![processed_result][processed_result1]
+![processed_result_heatmap][processed_result_heatmap1]
+![processed_result][processed_result2]
+![processed_result_heatmap][processed_result_heatmap2]
+![processed_result][processed_result3]
+![processed_result_heatmap][processed_result_heatmap3]
+![processed_result][processed_result4]
+![processed_result_heatmap][processed_result_heatmap4]
+![processed_result][processed_result5]
+![processed_result_heatmap][processed_result_heatmap5]
+![processed_result][processed_result6]
+![processed_result_heatmap][processed_result_heatmap6]
 
 ---
 
